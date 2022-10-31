@@ -1,38 +1,98 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(229, 224, 224);
+}
+
+.wrapper {
+  max-width: 1184px;
+  margin: 0px auto;
+}
+
+header {
   text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+header p {
+  padding-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  padding: 10px 10px;
+  transition: 0.3s ease;
+}
+.menu:nth-child(4) {
+  justify-self: flex-end;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  right: 10px;
+}
+.menu:hover {
+  opacity: 0.5;
+}
+
+img {
+  width: 800px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.container-Item {
+  background-color: white;
+  padding: 20px;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px 0px;
+}
+.container-Item p {
+  padding: 10px 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.flex-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.container-aboutMe {
+  background-color: white;
+  padding: 20px;
+  height: 450px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-aboutMe img {
+  width: 300px;
 }
