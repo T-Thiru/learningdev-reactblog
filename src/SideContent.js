@@ -1,7 +1,11 @@
 import AboutMe from "./AboutMe";
 
 const SideContent = () => {
-  return <AboutMe></AboutMe>;
+  return (
+    <div className="sideContent">
+      <AboutMe></AboutMe>
+    </div>
+  );
 };
 
 export default SideContent;

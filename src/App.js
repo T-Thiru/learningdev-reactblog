@@ -22,7 +22,9 @@ function App() {
         <MainContent></MainContent>
         <SideContent></SideContent>
       </main>
-      <footer></footer>
+      <footer className="wrapper">
+        <p>Made at le Leacteur by Thiru - 2022</p>
+      </footer>
     </>
   );
 }
